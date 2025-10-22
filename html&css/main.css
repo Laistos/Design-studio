@@ -1,6 +1,8 @@
 *,
 ::before,
 ::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -82,3 +84,36 @@
     line-height: 92.12px;
     text-align: center;
 }
+
+.images_container{
+    max-width: 1060px;
+    width: 100%;
+    margin: 226px auto 0;
+}
+
+.line_image{
+    top: 228px;
+    bottom: 68px;
+    z-index: 1;
+    width: 229px;
+    height: 193px;
+}
+
+.background_image{
+    z-index: -1;
+    position: relative;
+}
+
+.main_image{
+    position: absolute;
+    /*width: 581px;*/
+    /*height: 457px;*/
+    top: 15px;
+    /*left: 20px;*/
+    /*bottom: 17px;*/
+    /*right: 117px;*/
+}
+
+.color_image{
+}
+
