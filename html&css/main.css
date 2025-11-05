@@ -7,13 +7,14 @@
 }
 
 .wrapper {
-    max-width: 1140px;
+    max-width: 1300px;
     margin: 0 auto;
     font-family: Roboto;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -24,7 +25,7 @@
     margin-top: 96px;
 }
 
-.logo_container {
+.logo__container {
 }
 
 .logo {
@@ -33,18 +34,18 @@
 .menu {
 }
 
-.main_menu {
+.main__menu {
     display: flex;
     justify-content: space-between;
 
 }
 
-.menu_element_container {
+.menu__element__container {
     margin: 0 32px 0 32px;
     list-style: none;
 }
 
-.menu_element {
+.menu__element {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -55,18 +56,18 @@
     transition: color 0.2s linear;
 }
 
-.menu_element:hover {
+.menu__element:hover {
     color: #8247FF;
 }
 
-.menu_button {
+.menu__button {
+    text-align: center;
     width: 112px;
     height: 44px;
     border-radius: 5px;
     background-color: #8247FF;
     color: #FFFFFF;
-    font-family: Roboto;
-    font-weight: 400;
+    text-decoration: none;
     line-height: 20px;
     font-size: 17px;
     padding: 10px;
@@ -75,12 +76,12 @@
     cursor: pointer;
 }
 
-.menu_button:hover {
+.menu__button:hover {
     color: #8247FF;
     background-color: #FFFFFF;
 }
 
-.main_body {
+.main__body {
     margin-top: 110px;
     position: relative;
     width: 100%;
@@ -93,8 +94,6 @@
 }
 
 .title {
-    max-width: 1000px;
-    margin: 0 auto;
     width: 100%;
     font-size: 97px;
     font-weight: 400;
@@ -102,29 +101,28 @@
     text-align: center;
 }
 
-.images_container {
-
+.images__container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     height: 600px;
     margin: 226px auto 0;
 }
 
-.images_container img {
+.images__container img {
     position: absolute;
     object-fit: contain;
     transition: 0.3s ease;
 }
 
-.line_image {
-    left: 3%;
+.line__image {
+    left: 5%;
     top: 41%;
     transform: translateY(-50%);
     z-index: 2;
 }
 
-.background_image {
+.background__image {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -132,18 +130,148 @@
     opacity: 0.9;
 }
 
-.main_image {
+.main__image {
     top: 41%;
-    left: 45.5%;
+    left: 46%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
 
-.color_image {
-    right: 2.5%;
+.color__image {
+    right: 8.2%;
     top: 41%;
     transform: translateY(-50%);
     z-index: 2;
+}
+
+.support__container {
+    width: 1060px;
+    margin-top: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.support__title{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    padding-left: 17.8%;
+}
+
+.support__round {
+    width: 15px;
+    height: 15px;
+    border-radius: 200px;
+    background-color: #000000;
+}
+
+.support__text {
+    width: 400px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 10px;
+}
+
+.support__main__text{
+    margin-top: 53px;
+    font-size: 53px;
+    line-height: 69.16px;
+    text-align: center;
+}
+
+.support__button{
+    background-color: #8247FF;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 30px 50px 30px 40px;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 53px 0 0 0;
+    transition: color, background-color 0.2s linear;
+}
+
+.support__image{
+    position: absolute;
+    width: 19px;
+    height: 12px;
+    top: 43%;
+    right: 10%;
+    transition: opacity 0.2s linear;
+}
+
+.support__button:hover {
+    background-color: #FFFFFF;
+    color: #8247FF;
+    .support__image{
+        content: url("../img/photoshop_images/support_section/arrow-hover.png")
+    }
+}
+
+.card{
+    margin-top: 324px;
+    display: flex;
+    width: 1290px;
+    flex-wrap: wrap;
+}
+
+.card__container{
+    width: 546px;
+    height: 530px;
+    padding: 60px;
+    background-color: #EBF8F9;
+    margin: 48px;
+    border-radius: 20px;
+}
+
+.card__container:nth-child(2){
+    background-color: #FFF3E8;
+    .card__image__container{
+        background-color: #A3ECA1;
+    }
+}
+.card__container:nth-child(3){
+    .card__image__container{
+        background-color: #C5AAFF;
+    }
+}
+.card__container:nth-child(4){
+    background-color: #FFF3E8;
+    .card__image__container{
+        background-color: #FFD3AA;
+    }
+}
+
+.card__image__container{
+    margin-bottom: 111px;
+    position: relative;
+    background-color: #93F8FF;
+    padding: 30px;
+    width: 90px;
+    height: 90px;
+}
+
+.card__image{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.card__title{
+    font-size: 32px;
+    line-height: 43.68px;
+    margin-bottom: 12px;
+}
+
+.card__text{
+    font-size: 22px;
+    line-height: 31.36px;
+    color: #00000099;
 }
 
 .footer {
@@ -157,83 +285,7 @@
 
 .text {
     font-size: 11px;
-    font-family: Roboto;
     line-height: 20px;
     color: #969696;
     text-decoration: none;
-}
-
-.support_container {
-    width: 1060px;
-    margin-top: 143px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.support_title{
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-
-    padding-left: 135px;
-}
-
-.support_round {
-    width: 18px;
-    height: 18px;
-    border-radius: 200px;
-    background-color: #000000;
-}
-
-.support_text {
-    width: 400px;
-    font-size: 24px;
-    line-height: 36px;
-    padding-left: 10px;
-}
-
-.support_main_text{
-    margin-top: 53px;
-    font-size: 53px;
-    line-height: 69.16px;
-    text-align: center;
-}
-
-.support_button{
-    background-color: #8247FF;
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 20px;
-    padding: 30px 50px 30px 40px;
-    border-radius: 50px;
-    position: relative;
-    border: none;
-    cursor: pointer;
-    margin: 53px +11% 0 0;
-    transition: color, background-color 0.2s linear;
-}
-
-.support_button:hover {
-    background-color: #FFFFFF;
-    color: #8247FF;
-
-}
-
-.support_button:hover .support_image{
-    content: url("../img/photoshop_images/support_section/arrow-hover.png")
-}
-
-.support_image{
-    position: absolute;
-    width: 19px;
-    height: 12px;
-    top: 35px;
-    right: 25px;
-    transition: opacity 0.2s linear;
-}
-
-.support_image:hover{
-
 }
