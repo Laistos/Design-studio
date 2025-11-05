@@ -13,32 +13,38 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 57px;
     margin-top: 96px;
 }
 
-.logo_container{}
+.logo_container {
+}
 
-.logo{}
+.logo {
+}
 
-.menu{}
+.menu {
+}
 
-.main_menu{
+.main_menu {
     display: flex;
     justify-content: space-between;
 
 }
-.menu_element_container{
+
+.menu_element_container {
     margin: 0 32px 0 32px;
     list-style: none;
 }
 
-.menu_element{
+.menu_element {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -49,11 +55,11 @@
     transition: color 0.2s linear;
 }
 
-.menu_element:hover{
+.menu_element:hover {
     color: #8247FF;
 }
 
-.menu_button{
+.menu_button {
     width: 112px;
     height: 44px;
     border-radius: 5px;
@@ -69,12 +75,12 @@
     cursor: pointer;
 }
 
-.menu_button:hover{
+.menu_button:hover {
     color: #8247FF;
     background-color: #FFFFFF;
 }
 
-.main_body{
+.main_body {
     margin-top: 110px;
     position: relative;
     width: 100%;
@@ -86,7 +92,7 @@
     flex: 1;
 }
 
-.title{
+.title {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
@@ -96,7 +102,7 @@
     text-align: center;
 }
 
-.images_container{
+.images_container {
 
     position: relative;
     width: 100%;
@@ -111,14 +117,14 @@
     transition: 0.3s ease;
 }
 
-.line_image{
+.line_image {
     left: 3%;
     top: 41%;
     transform: translateY(-50%);
     z-index: 2;
 }
 
-.background_image{
+.background_image {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -126,20 +132,21 @@
     opacity: 0.9;
 }
 
-.main_image{
+.main_image {
     top: 41%;
     left: 45.5%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
 
-.color_image{
+.color_image {
     right: 2.5%;
     top: 41%;
     transform: translateY(-50%);
     z-index: 2;
 }
-.footer{
+
+.footer {
     display: flex;
     text-align: center;
     padding: 20px 0;
@@ -148,10 +155,85 @@
 
 }
 
-.text{
+.text {
     font-size: 11px;
     font-family: Roboto;
     line-height: 20px;
     color: #969696;
     text-decoration: none;
+}
+
+.support_container {
+    width: 1060px;
+    margin-top: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.support_title{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+
+    padding-left: 135px;
+}
+
+.support_round {
+    width: 18px;
+    height: 18px;
+    border-radius: 200px;
+    background-color: #000000;
+}
+
+.support_text {
+    width: 400px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 10px;
+}
+
+.support_main_text{
+    margin-top: 53px;
+    font-size: 53px;
+    line-height: 69.16px;
+    text-align: center;
+}
+
+.support_button{
+    background-color: #8247FF;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 30px 50px 30px 40px;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    margin: 53px +11% 0 0;
+    transition: color, background-color 0.2s linear;
+}
+
+.support_button:hover {
+    background-color: #FFFFFF;
+    color: #8247FF;
+
+}
+
+.support_button:hover .support_image{
+    content: url("../img/photoshop_images/support_section/arrow-hover.png")
+}
+
+.support_image{
+    position: absolute;
+    width: 19px;
+    height: 12px;
+    top: 35px;
+    right: 25px;
+    transition: opacity 0.2s linear;
+}
+
+.support_image:hover{
+
 }
